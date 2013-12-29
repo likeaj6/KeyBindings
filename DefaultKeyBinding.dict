@@ -1,20 +1,24 @@
-{ // General
+{
+/* Keybindings for emacs emulation.  Compiled by Jacob Rus.
+ *
+ * This is a pretty good set, especially considering that many emacs bindings
+ * such as C-o, C-a, C-e, C-k, C-y, C-v, C-f, C-b, C-p, C-n, C-t, and
+ * perhaps a few more, are already built into the system.
+ *
+ * BEWARE:
+ * This file uses the Option key as a meta key.  This has the side-effect
+ * of overriding Mac OS keybindings for the option key, which generally
+ * make common symbols and non-english letters.
+ */
+
+ // General
   // > defaults write -g NSTextKillRingSize -string 6
   // replace yank: command with yankAndSelect for use with the kill ring
   "^y" = (yankAndSelect:);
-  // uppercase word
-  "^U" = (uppercaseWord:, moveWordForward:, moveWordBackward:);
-  // lowercase word
-  "^~u" = (lowercaseWord:, moveWordForward:, moveWordBackward:);
-  // titlecase word
-  "^T" = (capitalizeWord:, moveWordForward:, moveWordBackward:);
-
-  // uppercase current paragraph
-  "^~U" = (setMark:, selectParagraph:, uppercaseWord:, swapWithMark:);
-  // lowercase current paragraph
-  // "^~u" = (setMark:, selectParagraph:, lowercaseWord:, swapWithMark:);
-  // titlecase paragraph
-  "^~t" = (setMark:, selectParagraph:, capitalizeWord:, swapWithMark:);
+  // Page Up
+  "~v" = (pageUp:);
+  // Page Down
+  "^v" = (pageDown:);
 
   // delete word before cursor
   "^w" = (deleteWordBackward:);
