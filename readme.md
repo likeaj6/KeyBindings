@@ -37,24 +37,12 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">replace yank: command with yankAndSelect for use with the kill ring ( defaults write -g NSTextKillRingSize -string 6)</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⇧u</td>
-	<td style="text-align:left;">uppercase word</td>
+	<td style="text-align:center;">⌥v</td>
+	<td style="text-align:left;">Page Up</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌥u</td>
-	<td style="text-align:left;">lowercase word</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⇧t</td>
-	<td style="text-align:left;">titlecase word</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌥⇧u</td>
-	<td style="text-align:left;">uppercase current paragraph</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌥t</td>
-	<td style="text-align:left;">titlecase paragraph</td>
+	<td style="text-align:center;">^v</td>
+	<td style="text-align:left;">Page Down</td>
 </tr>
 <tr>
 	<td style="text-align:center;">^w</td>
