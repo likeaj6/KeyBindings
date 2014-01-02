@@ -15,6 +15,10 @@
   // > defaults write -g NSTextKillRingSize -string 6
   // replace yank: command with yankAndSelect for use with the kill ring
   "^y" = (yankAndSelect:);
+  // Move forward word
+  "~f" = (moveWordForward:);
+  // Move backword word
+  "~b" = (moveWordBackward)
   // Page Up
   "~v" = (pageUp:);
   // Page Down
@@ -125,6 +129,23 @@
   // > Shift Tab
   // remove one tab (or character) from start of line (outdent)
   "$\U0009" = (setMark:, moveToBeginningOfParagraph:, moveRight:, deleteBackward:, swapWithMark:, moveLeft:);
+
+  "^x" = { // EMACS style C-x shortcuts
+      // Undo
+      "u" = (undo:);
+      // Close window
+      "k" = (performClose:);
+      // Open ( find file )
+      "^f" = (openDocument:);
+      // Swap with mark
+      "^x" = (swapWithMark:);
+      // Select to mark
+      "^m" = (selectToMark:);
+      // Save
+      "^s" = (saveDocument:);
+      // Save as
+      "^w" = (saveDocumentAs:);
+  }
 
   "^@c" = { // Commenting commands
       // comment with "//"
