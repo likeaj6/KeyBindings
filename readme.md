@@ -69,7 +69,7 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">delete word before cursor</td>
 </tr>
 <tr>
-	<td style="text-align:center;">⌥\⇧u007⇧f</td>
+	<td style="text-align:center;">⌥⌫</td>
 	<td style="text-align:left;">delete word before cursor</td>
 </tr>
 <tr>
@@ -655,7 +655,7 @@ Any open applications will need to be re-started before the key bindings will ta
 <tr>
 	<td style="text-align:center;">^x</td>
 	<td style="text-align:center;"></td>
-	<td style="text-align:center;">i,⌘⇧⌫</td>
+	<td style="text-align:center;">i,⌘⇧\177</td>
 	<td style="text-align:left;">Delete to beginning of paragraph</td>
 </tr>
 <tr>
