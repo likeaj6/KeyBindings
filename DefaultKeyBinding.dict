@@ -15,17 +15,26 @@
   // > defaults write -g NSTextKillRingSize -string 6
   // replace yank: command with yankAndSelect for use with the kill ring
   "^y" = (yankAndSelect:);
-  // Move forward word
+  // complete
+  "~/" = (Complete:);
+  // move forward word
   "~f" = (moveWordForward:);
-  // Move backword word
+  // move backword word
   "~b" = (moveWordBackward)
-  // Page Up
+  // page Up
   "~v" = (pageUp:);
-  // Page Down
+  // page Down
   "^v" = (pageDown:);
-
+  // undo
+  "^/" = (Undo:);
+  // undo
+  "^_" = (Undo:);
   // delete word before cursor
   "^w" = (deleteWordBackward:);
+  // delete word before cursor
+  "~\U007F" = (deleteWordBackward:);
+  // delete word before cursor
+  "~d" = (deleteWordForward:);
   // select word
   "~w" = (selectWord:);
   // select word backward and modify selection
@@ -37,7 +46,7 @@
   // select paragraph excluding leading/trailing whitespace (same as ^$@\UF701)
   "^~S" = (moveToEndOfParagraph:, insertText:, " ", selectWord:, moveBackward:, moveToBeginningOfParagraphAndModifySelection:, moveWordForwardAndModifySelection:, moveWordBackwardAndModifySelection:);
   // delete line/paragraph
-  "~d" = (selectParagraph:, delete:, moveToBeginningOfParagraph:);
+  "^u" = (selectParagraph:, delete:, moveToBeginningOfParagraph:);
   // copy paragraph
   "~y" = (setMark:, moveToBeginningOfParagraph:, moveToEndOfParagraphAndModifySelection:, copy:, swapWithMark:);
   // cut paragraph

@@ -53,167 +53,54 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">Page Down</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^w</td>
-	<td style="text-align:left;">delete word before cursor</td>
+	<td style="text-align:center;">^/</td>
+	<td style="text-align:left;">Undo</td>
 </tr>
 <tr>
-	<td style="text-align:center;">⌥w</td>
-	<td style="text-align:left;">select word</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥⇧w</td>
-	<td style="text-align:left;">select word backward and modify selection</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥⇧s</td>
-	<td style="text-align:left;">select entire line/paragraph</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥s</td>
-	<td style="text-align:left;">select from beginning of paragrah to last character</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌥⇧s</td>
-	<td style="text-align:left;">select paragraph excluding leading/trailing whitespace (same as ^$@\UF701)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥d</td>
-	<td style="text-align:left;">delete line/paragraph</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥y</td>
-	<td style="text-align:left;">copy paragraph</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥x</td>
-	<td style="text-align:left;">cut paragraph</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥p</td>
-	<td style="text-align:left;">paste paragraph below</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥⇧p</td>
-	<td style="text-align:left;">paste paragraph above</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⇧a</td>
-	<td style="text-align:left;">select to beginning of paragraph and copy</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⇧e</td>
-	<td style="text-align:left;">select to end of paragraph and copy</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥q</td>
-	<td style="text-align:left;">cut to beginning of paragraph</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥k</td>
-	<td style="text-align:left;">cut to end of paragraph</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥o</td>
-	<td style="text-align:left;">blank line after current</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥⇧o</td>
-	<td style="text-align:left;">blank line before current</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌘k</td>
-	<td style="text-align:left;">move line up</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌘j</td>
-	<td style="text-align:left;">move line down</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌘l</td>
-	<td style="text-align:left;">indent line</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌘h</td>
-	<td style="text-align:left;">outdent line (one tab or char)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌘↑</td>
-	<td style="text-align:left;">move line up ( same commands but with arrow keys)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌘↓</td>
-	<td style="text-align:left;">move line down</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌘→</td>
-	<td style="text-align:left;">indent line</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌘←</td>
-	<td style="text-align:left;">outdent line (one tab or char)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⇧⌘←</td>
-	<td style="text-align:left;">Full outdent - Deletes all leading space of line/paragraph (updated) ( Control-shift-command-left arrow)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⇧⌘→</td>
-	<td style="text-align:left;">Delete trailing space</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌘⇧↑</td>
-	<td style="text-align:left;">Delete leading and trailing whitespace for paragraph</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌘⇧↓</td>
-	<td style="text-align:left;">Select paragraph without leading or trailing whitespace</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌥⇧↑</td>
-	<td style="text-align:left;">modify selection up by paragraph (Control Option Shift Up)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌥⇧↓</td>
-	<td style="text-align:left;">modify selection down by paragraph (Control Option Shift Down)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌥⇧←</td>
-	<td style="text-align:left;">modify selection left by word</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌥⇧→</td>
-	<td style="text-align:left;">modify selection right by word</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌘⌥<sup>←</sup></td>
-	<td style="text-align:left;">Move to first Alphanumeric character of line (new)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌘⌥←</td>
-	<td style="text-align:left;">Move to first non-whitespace character of line (new)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌘⌥⇧←</td>
-	<td style="text-align:left;">Select to first character of line with leading space (new)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌥⌘→</td>
-	<td style="text-align:left;">Move to last non-whitespace character of paragraph (new)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">^⌥→</td>
-	<td style="text-align:left;">Move to end of paragraph and delete trailing whitespace (new)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌘↩</td>
-	<td style="text-align:left;">TextMate Command-Return (Command Enter)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌘⇧↩</td>
-	<td style="text-align:left;">Insert blank line above paragraph (Command Shift Enter)</td>
-</tr>
-<tr>
-	<td style="text-align:center;">⌘⌥_</td>
+	<td style="text-align:center;">^<em>|Undo |
+|^w|delete word before cursor |
+|⌥\⇧u007⇧f|delete word before cursor |
+|⌥d|delete word before cursor |
+|⌥w|select word |
+|⌥⇧w|select word backward and modify selection |
+|⌥⇧s|select entire line/paragraph |
+|⌥s|select from beginning of paragrah to last character |
+|^⌥⇧s|select paragraph excluding leading/trailing whitespace (same as ^$@\UF701) |
+|^u|delete line/paragraph |
+|⌥y|copy paragraph |
+|⌥x|cut paragraph |
+|⌥p|paste paragraph below |
+|⌥⇧p|paste paragraph above |
+|^⇧a|select to beginning of paragraph and copy |
+|^⇧e|select to end of paragraph and copy |
+|⌥q|cut to beginning of paragraph |
+|⌥k|cut to end of paragraph |
+|⌥o|blank line after current |
+|⌥⇧o|blank line before current |
+|^⌘k|move line up |
+|^⌘j|move line down |
+|^⌘l|indent line |
+|^⌘h|outdent line (one tab or char) |
+|^⌘↑|move line up ( same commands but with arrow keys)|
+|^⌘↓|move line down |
+|^⌘→|indent line |
+|^⌘←|outdent line (one tab or char) |
+|^⇧⌘←|Full outdent - Deletes all leading space of line/paragraph (updated) ( Control-shift-command-left arrow)|
+|^⇧⌘→|Delete trailing space |
+|^⌘⇧↑|Delete leading and trailing whitespace for paragraph |
+|^⌘⇧↓|Select paragraph without leading or trailing whitespace |
+|^⌥⇧↑|modify selection up by paragraph (Control Option Shift Up) |
+|^⌥⇧↓|modify selection down by paragraph (Control Option Shift Down) |
+|^⌥⇧←|modify selection left by word |
+|^⌥⇧→|modify selection right by word |
+|⌘⌥<sup>←</sup>|Move to first Alphanumeric character of line (new) |
+|⌘⌥←|Move to first non-whitespace character of line (new) |
+|⌘⌥⇧←|Select to first character of line with leading space (new) |
+|⌥⌘→|Move to last non-whitespace character of paragraph (new) |
+|^⌥→|Move to end of paragraph and delete trailing whitespace (new) |
+|⌘↩|TextMate Command-Return (Command Enter) |
+|⌘⇧↩|Insert blank line above paragraph (Command Shift Enter) |
+|⌘⌥</em></td>
 	<td style="text-align:left;">hyphenate next space and move to next word ( this will kill non alphanumeric symbols and punctuation, use only on <em>words</em>)</td>
 </tr>
 <tr>
