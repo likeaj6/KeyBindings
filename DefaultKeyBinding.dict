@@ -20,7 +20,7 @@
   // move forward word
   "~f" = (moveWordForward:);
   // move backword word
-  "~b" = (moveWordBackward)
+  "~b" = (moveWordBackward:);
   // page Up
   "~v" = (pageUp:);
   // page Down
@@ -154,7 +154,7 @@
       "^s" = (saveDocument:);
       // Save as
       "^w" = (saveDocumentAs:);
-  }
+  };
 
   "^@c" = { // Commenting commands
       // comment with "//"
