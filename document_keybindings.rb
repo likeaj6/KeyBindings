@@ -58,7 +58,9 @@ Copy the DefaultKeyBinding.dict file to the `~/Library/KeyBindings/` directory (
 
 Any open applications will need to be re-started before the key bindings will take effect -- or log out and log back in.
 
-## Documentation <i>(last updated #{date}.)</i>
+## Documentation
+
+> last updated #{date}.
 
 *Grouped items begin with the groups shortcut (if exists), followed by a subgroup (if exists) followed by the keys specified.*
 
