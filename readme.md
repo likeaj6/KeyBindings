@@ -1,3 +1,5 @@
+##Introduction
+
 DefaultKeyBindings.dict file (`~/Library/KeyBindings/DefaultKeyBindings.dict`) for Mac OS X, created by [Brett Terpstra][] and based heavily on work done by [Lri][lrikeys].
 Please note that these bindings won't work in all applications: TextWrangler and TextMate, for example, override these with their own settings.
 See Lri's [gists][lrigists] and [website][lriweb] for more coding madness.
@@ -7,10 +9,12 @@ See Lri's [gists][lrigists] and [website][lriweb] for more coding madness.
 [lrigists]: https://gist.github.com/Lri
 [brett terpstra]: http://brettterpstra.com
 
-<b>Installation</b>: Copy the DefaultKeyBindings.dict file to the `~/Library/KeyBindings/` directory (create `KeyBindings` if it doesn't already exist). 
+##Installation
+
+Copy the DefaultKeyBindings.dict file to the `~/Library/KeyBindings/` directory (create `KeyBindings` if it doesn't already exist).
 Any open applications will need to be re-started before the key bindings will take effect -- or log out and log back in.
 
-<b>Documentation</b> <i>(last updated 01/03/2014.)</i>
+<b>Documentation</b> <i>(last updated 03/29/2015.)</i>
 
 *Grouped items begin with the groups shortcut (if exists), followed by a subgroup (if exists) followed by the keys specified.*
 
@@ -33,7 +37,7 @@ Any open applications will need to be re-started before the key bindings will ta
 
 <tbody>
 <tr>
-	<td style="text-align:center;">^y</td>
+	<td style="text-align:center;">⌃y</td>
 	<td style="text-align:left;">replace yank: command with yankAndSelect for use with the kill ring ( defaults write -g NSTextKillRingSize -string 6)</td>
 </tr>
 <tr>
@@ -53,19 +57,19 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">page Up</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^v</td>
+	<td style="text-align:center;">⌃v</td>
 	<td style="text-align:left;">page Down</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^/</td>
+	<td style="text-align:center;">⌃/</td>
 	<td style="text-align:left;">undo</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⇧-</td>
+	<td style="text-align:center;">⌃⇧-</td>
 	<td style="text-align:left;">undo</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^w</td>
+	<td style="text-align:center;">⌃w</td>
 	<td style="text-align:left;">delete word before cursor</td>
 </tr>
 <tr>
@@ -93,11 +97,11 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">select from beginning of paragrah to last character</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌥⇧s</td>
+	<td style="text-align:center;">⌃⌥⇧s</td>
 	<td style="text-align:left;">select paragraph excluding leading/trailing whitespace (same as ^$@\UF701)</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^u</td>
+	<td style="text-align:center;">⌃u</td>
 	<td style="text-align:left;">delete line/paragraph</td>
 </tr>
 <tr>
@@ -117,11 +121,11 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">paste paragraph above</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⇧a</td>
+	<td style="text-align:center;">⌃⇧a</td>
 	<td style="text-align:left;">select to beginning of paragraph and copy</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⇧e</td>
+	<td style="text-align:center;">⌃⇧e</td>
 	<td style="text-align:left;">select to end of paragraph and copy</td>
 </tr>
 <tr>
@@ -141,71 +145,71 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">blank line before current</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘k</td>
+	<td style="text-align:center;">⌃⌘k</td>
 	<td style="text-align:left;">move line up</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘j</td>
+	<td style="text-align:center;">⌃⌘j</td>
 	<td style="text-align:left;">move line down</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘l</td>
+	<td style="text-align:center;">⌃⌘l</td>
 	<td style="text-align:left;">indent line</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘h</td>
+	<td style="text-align:center;">⌃⌘h</td>
 	<td style="text-align:left;">outdent line (one tab or char)</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘↑</td>
+	<td style="text-align:center;">⌃⌘↑</td>
 	<td style="text-align:left;">move line up ( same commands but with arrow keys)</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘↓</td>
+	<td style="text-align:center;">⌃⌘↓</td>
 	<td style="text-align:left;">move line down</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘→</td>
+	<td style="text-align:center;">⌃⌘→</td>
 	<td style="text-align:left;">indent line</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘←</td>
+	<td style="text-align:center;">⌃⌘←</td>
 	<td style="text-align:left;">outdent line (one tab or char)</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⇧⌘←</td>
+	<td style="text-align:center;">⌃⇧⌘←</td>
 	<td style="text-align:left;">Full outdent - Deletes all leading space of line/paragraph (updated) ( Control-shift-command-left arrow)</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⇧⌘→</td>
+	<td style="text-align:center;">⌃⇧⌘→</td>
 	<td style="text-align:left;">Delete trailing space</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘⇧↑</td>
+	<td style="text-align:center;">⌃⌘⇧↑</td>
 	<td style="text-align:left;">Delete leading and trailing whitespace for paragraph</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘⇧↓</td>
+	<td style="text-align:center;">⌃⌘⇧↓</td>
 	<td style="text-align:left;">Select paragraph without leading or trailing whitespace</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌥⇧↑</td>
+	<td style="text-align:center;">⌃⌥⇧↑</td>
 	<td style="text-align:left;">modify selection up by paragraph (Control Option Shift Up)</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌥⇧↓</td>
+	<td style="text-align:center;">⌃⌥⇧↓</td>
 	<td style="text-align:left;">modify selection down by paragraph (Control Option Shift Down)</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌥⇧←</td>
+	<td style="text-align:center;">⌃⌥⇧←</td>
 	<td style="text-align:left;">modify selection left by word</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌥⇧→</td>
+	<td style="text-align:center;">⌃⌥⇧→</td>
 	<td style="text-align:left;">modify selection right by word</td>
 </tr>
 <tr>
-	<td style="text-align:center;">⌘⌥<sup>←</sup></td>
+	<td style="text-align:center;">⌘⌥⌃←</td>
 	<td style="text-align:left;">Move to first Alphanumeric character of line (new)</td>
 </tr>
 <tr>
@@ -221,7 +225,7 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">Move to last non-whitespace character of paragraph (new)</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌥→</td>
+	<td style="text-align:center;">⌃⌥→</td>
 	<td style="text-align:left;">Move to end of paragraph and delete trailing whitespace (new)</td>
 </tr>
 <tr>
@@ -277,7 +281,7 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">decrease blockquote level</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^&lt;</td>
+	<td style="text-align:center;">⌃&lt;</td>
 	<td style="text-align:left;">Make selected text into paired HTML tag. Allows attributes, only dupes first word into closing tag (caveat: overwrites your pasteboard)</td>
 </tr>
 <tr>
@@ -314,51 +318,51 @@ Any open applications will need to be re-started before the key bindings will ta
 
 <thead>
 <tr>
-	<th style="text-align:center;" colspan="4">EMACS style C-x shortcuts (^x)</th>
+	<th style="text-align:center;" colspan="4">EMACS style C-x shortcuts (⌃x)</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-	<td style="text-align:center;">^x</td>
+	<td style="text-align:center;">⌃x</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">u</td>
 	<td style="text-align:left;">Undo</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^x</td>
+	<td style="text-align:center;">⌃x</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">k</td>
 	<td style="text-align:left;">Close window</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^x</td>
+	<td style="text-align:center;">⌃x</td>
 	<td style="text-align:center;"></td>
-	<td style="text-align:center;">^f</td>
+	<td style="text-align:center;">⌃f</td>
 	<td style="text-align:left;">Open ( find file )</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^x</td>
+	<td style="text-align:center;">⌃x</td>
 	<td style="text-align:center;"></td>
-	<td style="text-align:center;">^x</td>
+	<td style="text-align:center;">⌃x</td>
 	<td style="text-align:left;">Swap with mark</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^x</td>
+	<td style="text-align:center;">⌃x</td>
 	<td style="text-align:center;"></td>
-	<td style="text-align:center;">^m</td>
+	<td style="text-align:center;">⌃m</td>
 	<td style="text-align:left;">Select to mark</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^x</td>
+	<td style="text-align:center;">⌃x</td>
 	<td style="text-align:center;"></td>
-	<td style="text-align:center;">^s</td>
+	<td style="text-align:center;">⌃s</td>
 	<td style="text-align:left;">Save</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^x</td>
+	<td style="text-align:center;">⌃x</td>
 	<td style="text-align:center;"></td>
-	<td style="text-align:center;">^w</td>
+	<td style="text-align:center;">⌃w</td>
 	<td style="text-align:left;">Save as</td>
 </tr>
 </tbody>
@@ -375,31 +379,31 @@ Any open applications will need to be re-started before the key bindings will ta
 
 <thead>
 <tr>
-	<th style="text-align:center;" colspan="4">Commenting commands (^⌘c)</th>
+	<th style="text-align:center;" colspan="4">Commenting commands (⌃⌘c)</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-	<td style="text-align:center;">^⌘c</td>
+	<td style="text-align:center;">⌃⌘c</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">/</td>
 	<td style="text-align:left;">comment with &#8220;//&#8221;</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘c</td>
+	<td style="text-align:center;">⌃⌘c</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">\</td>
 	<td style="text-align:left;">comment with &#8220;#&#8221;</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘c</td>
+	<td style="text-align:center;">⌃⌘c</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">!</td>
 	<td style="text-align:left;">HTML commenting</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘c</td>
+	<td style="text-align:center;">⌃⌘c</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">*</td>
 	<td style="text-align:left;">Css Commenting</td>
@@ -418,101 +422,101 @@ Any open applications will need to be re-started before the key bindings will ta
 
 <thead>
 <tr>
-	<th style="text-align:center;" colspan="4">Multi-stroke Markdown commands (^⌘w)</th>
+	<th style="text-align:center;" colspan="4">Multi-stroke Markdown commands (⌃⌘w)</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">␍</td>
 	<td style="text-align:left;">force carriage return in text field</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">⇥</td>
 	<td style="text-align:left;">force tab in text field</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">\</td>
 	<td style="text-align:left;">insert reference link <code>[selection][[cursor]]</code></td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">\</td>
 	<td style="text-align:left;">insert reference <code>[selection]: [cursor]</code></td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">+</td>
 	<td style="text-align:left;">Unordered list item with</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">-</td>
 	<td style="text-align:left;">Unordered list item with -</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">*</td>
 	<td style="text-align:left;">Unordered list item with *</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">8</td>
 	<td style="text-align:left;">convert current numbered list item to bullet, handles indentation</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">1</td>
 	<td style="text-align:left;">convert current bullet list item to numbered</td>
 </tr>
 <tr>
 	<td style="text-align:center;" colspan="3">Headlines (removes leading whitespace after inserting hashmarks) (h)</td>
-	<td style="text-align:center;"></td>
+	<td style="text-align:left;"></td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;">h</td>
 	<td style="text-align:center;">1</td>
 	<td style="text-align:left;">#</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;">h</td>
 	<td style="text-align:center;">2</td>
 	<td style="text-align:left;">##</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;">h</td>
 	<td style="text-align:center;">3</td>
 	<td style="text-align:left;">###</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;">h</td>
 	<td style="text-align:center;">4</td>
 	<td style="text-align:left;">####</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;">h</td>
 	<td style="text-align:center;">5</td>
 	<td style="text-align:left;">#####</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;">h</td>
 	<td style="text-align:center;">6</td>
 	<td style="text-align:left;">######</td>
@@ -522,16 +526,16 @@ Any open applications will need to be re-started before the key bindings will ta
 </tr>
 <tr>
 	<td style="text-align:center;" colspan="3">Markdown link (l)</td>
-	<td style="text-align:center;"></td>
+	<td style="text-align:left;"></td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;">l</td>
 	<td style="text-align:center;">t</td>
 	<td style="text-align:left;">create a link for selected text, cursor between () <code>[selected text]([cursor])</code> ( links without selected text first, these can produce a mess using multiple clipboards make a text selection before you run them)</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;">l</td>
 	<td style="text-align:center;">c</td>
 	<td style="text-align:left;">create a link for selected text, inserting clipboard as url <code>[[cursor]selected text](clipboard contents)</code></td>
@@ -541,16 +545,16 @@ Any open applications will need to be re-started before the key bindings will ta
 </tr>
 <tr>
 	<td style="text-align:center;" colspan="3">Link as image (i)</td>
-	<td style="text-align:center;"></td>
+	<td style="text-align:left;"></td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;">i</td>
 	<td style="text-align:center;">t</td>
 	<td style="text-align:left;">same as lt, but with image syntax <code>![selected text]([cursor])</code></td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;">i</td>
 	<td style="text-align:center;">c</td>
 	<td style="text-align:left;">same as lc, but with image syntax <code>![selected text](clipboard)</code></td>
@@ -560,16 +564,16 @@ Any open applications will need to be re-started before the key bindings will ta
 </tr>
 <tr>
 	<td style="text-align:center;" colspan="3">Reference links (:)</td>
-	<td style="text-align:center;"></td>
+	<td style="text-align:left;"></td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;">:</td>
 	<td style="text-align:center;">t</td>
 	<td style="text-align:left;">create a reference from selected text</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘w</td>
+	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;">:</td>
 	<td style="text-align:center;">c</td>
 	<td style="text-align:left;">create a reference from selected text, clipboard as url</td>
@@ -591,47 +595,47 @@ Any open applications will need to be re-started before the key bindings will ta
 
 <thead>
 <tr>
-	<th style="text-align:center;" colspan="4">HTML commands (^⌘e)</th>
+	<th style="text-align:center;" colspan="4">HTML commands (⌃⌘e)</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-	<td style="text-align:center;">^⌘e</td>
+	<td style="text-align:center;">⌃⌘e</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">=</td>
 	<td style="text-align:left;">=&#8220;[cursor]&#8221;</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘e</td>
+	<td style="text-align:center;">⌃⌘e</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">e</td>
 	<td style="text-align:left;">entity &amp;[cursor];</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘e</td>
+	<td style="text-align:center;">⌃⌘e</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">/</td>
 	<td style="text-align:left;">http://</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘e</td>
+	<td style="text-align:center;">⌃⌘e</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">t</td>
 	<td style="text-align:left;">Make previous word into paired HTML tag</td>
 </tr>
 <tr>
 	<td style="text-align:center;" colspan="3">HTML Links (a)</td>
-	<td style="text-align:center;"></td>
+	<td style="text-align:left;"></td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘e</td>
+	<td style="text-align:center;">⌃⌘e</td>
 	<td style="text-align:center;">a</td>
 	<td style="text-align:center;">t</td>
 	<td style="text-align:left;">Insert HTML link for selected text, leave cursor in the href with &#8220;http://&#8221; selected</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘e</td>
+	<td style="text-align:center;">⌃⌘e</td>
 	<td style="text-align:center;">a</td>
 	<td style="text-align:center;">c</td>
 	<td style="text-align:left;">Insert HTML link with clipboard as href</td>
@@ -641,16 +645,16 @@ Any open applications will need to be re-started before the key bindings will ta
 </tr>
 <tr>
 	<td style="text-align:center;" colspan="3">HTML Image (i)</td>
-	<td style="text-align:center;"></td>
+	<td style="text-align:left;"></td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘e</td>
+	<td style="text-align:center;">⌃⌘e</td>
 	<td style="text-align:center;">i</td>
 	<td style="text-align:center;">t</td>
 	<td style="text-align:left;">Insert image tag, any selected text is alt text, leave cursor in src attribute</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘e</td>
+	<td style="text-align:center;">⌃⌘e</td>
 	<td style="text-align:center;">i</td>
 	<td style="text-align:center;">c</td>
 	<td style="text-align:left;">Insert image tag, clipboard as src, any selected text as alt, leave cursor at beginning of alt attribute</td>
@@ -672,67 +676,67 @@ Any open applications will need to be re-started before the key bindings will ta
 
 <thead>
 <tr>
-	<th style="text-align:center;" colspan="4">Surround commands (^⌘s)</th>
+	<th style="text-align:center;" colspan="4">Surround commands (⌃⌘s)</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-	<td style="text-align:center;">^⌘s</td>
+	<td style="text-align:center;">⌃⌘s</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">(</td>
 	<td style="text-align:left;">wrap () with spaces</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘s</td>
+	<td style="text-align:center;">⌃⌘s</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">)</td>
 	<td style="text-align:left;">wrap () no spaces</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘s</td>
+	<td style="text-align:center;">⌃⌘s</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">\</td>
 	<td style="text-align:left;">wrap [] with spaces</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘s</td>
+	<td style="text-align:center;">⌃⌘s</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">\</td>
 	<td style="text-align:left;">wrap [] no spaces</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘s</td>
+	<td style="text-align:center;">⌃⌘s</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">{</td>
 	<td style="text-align:left;">wrap {} with spaces</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘s</td>
+	<td style="text-align:center;">⌃⌘s</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">}</td>
 	<td style="text-align:left;">wrap {} no spaces</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘s</td>
+	<td style="text-align:center;">⌃⌘s</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">&lt;</td>
 	<td style="text-align:left;">wrap &lt;&gt; with spaces</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘s</td>
+	<td style="text-align:center;">⌃⌘s</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">&gt;</td>
 	<td style="text-align:left;">wrap &lt;&gt; no spaces</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘s</td>
+	<td style="text-align:center;">⌃⌘s</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">&#8217;</td>
 	<td style="text-align:left;">wrap single quotes</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^⌘s</td>
+	<td style="text-align:center;">⌃⌘s</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">`</td>
 	<td style="text-align:left;">wrap backticks</td>

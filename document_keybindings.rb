@@ -25,6 +25,8 @@ td:last-child { font-weight:normal;width:auto }
 STYLE
 
 intro =<<INTRO
+##Introduction
+
 DefaultKeyBindings.dict file (`~/Library/KeyBindings/DefaultKeyBindings.dict`) for Mac OS X, created by [Brett Terpstra][] and based heavily on work done by [Lri][lrikeys].
 Please note that these bindings won't work in all applications: TextWrangler and TextMate, for example, override these with their own settings.
 See Lri's [gists][lrigists] and [website][lriweb] for more coding madness.
@@ -34,7 +36,9 @@ See Lri's [gists][lrigists] and [website][lriweb] for more coding madness.
 [lrigists]: https://gist.github.com/Lri
 [brett terpstra]: http://brettterpstra.com
 
-<b>Installation</b>: Copy the DefaultKeyBindings.dict file to the `~/Library/KeyBindings/` directory (create `KeyBindings` if it doesn't already exist). 
+##Installation
+
+Copy the DefaultKeyBindings.dict file to the `~/Library/KeyBindings/` directory (create `KeyBindings` if it doesn't already exist).
 Any open applications will need to be re-started before the key bindings will take effect -- or log out and log back in.
 
 <b>Documentation</b> <i>(last updated #{date}.)</i>
@@ -63,11 +67,13 @@ skip = false
 note = ''
 
 def e_sh(str)
-	str.to_s.gsub(/(?=[^a-zA-Z0-9_.\/\-\x7F-\xFF\n])/, '\\').gsub(/\n/, "'\n'").sub(/^$/, "''")
+	#str.to_s.gsub(/(?=[^a-zA-Z0-9_.\/\-\x7F-\xFF\n])/, '\\').gsub(/\n/, "'\n'").sub(/^$/, "''")
+	str.to_s.gsub(/(?=[^a-zA-Z0-9_.\/\-\n])/, '\\').gsub(/\n/, "'\n'").sub(/^$/, "''")
 end
 
 def translate_command(str)
   str = str.gsub(/~/,'⌥').gsub(/@/,'⌘').gsub(/\$/,'⇧')
+  str = str.gsub(/\^/,'⌃')
   str = str.gsub('\UF700','↑').gsub('\UF701','↓').gsub('\UF703','→').gsub('\UF702','←')
   str = str.gsub('\U0009','⇥').gsub('\U000D','↩').gsub('\U001B','⎋').gsub('\U000A','␍')
   str = str.gsub('\UF728','⌦').gsub('\U007F','⌫')
