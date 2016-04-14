@@ -1,4 +1,4 @@
-##Introduction
+## Introduction
 
 DefaultKeyBindings.dict file (`~/Library/KeyBindings/DefaultKeyBindings.dict`) for Mac OS X, created by [Brett Terpstra][] and based heavily on work done by [Lri][lrikeys].
 Please note that these bindings won't work in all applications: TextWrangler and TextMate, for example, override these with their own settings.
@@ -9,17 +9,17 @@ See Lri's [gists][lrigists] and [website][lriweb] for more coding madness.
 [lrigists]: https://gist.github.com/Lri
 [brett terpstra]: http://brettterpstra.com
 
-##Installation
+## Installation
 
-Copy the DefaultKeyBindings.dict file to the `~/Library/KeyBindings/` directory (create `KeyBindings` if it doesn't already exist).
+Copy the DefaultKeyBinding.dict file to the `~/Library/KeyBindings/` directory (create `KeyBindings` if it doesn't already exist).
+
 Any open applications will need to be re-started before the key bindings will take effect -- or log out and log back in.
 
-<b>Documentation</b> <i>(last updated 03/29/2015.)</i>
+## Documentation <i>(last updated 04/14/2016.)</i>
 
 *Grouped items begin with the groups shortcut (if exists), followed by a subgroup (if exists) followed by the keys specified.*
 
 <table>
-<caption id="generalcommands"> General Commands </caption>
 <colgroup>
 <col style="text-align:center;"/>
 <col style="text-align:left;"/>
@@ -38,7 +38,7 @@ Any open applications will need to be re-started before the key bindings will ta
 <tbody>
 <tr>
 	<td style="text-align:center;">⌃y</td>
-	<td style="text-align:left;">replace yank: command with yankAndSelect for use with the kill ring ( defaults write -g NSTextKillRingSize -string 6)</td>
+	<td style="text-align:left;">replace yank: command with yankAndSelect for use with the kill ring ( defaults write -g NSTextKillRingSize -int 6)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌥/</td>
@@ -73,7 +73,7 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">delete word before cursor</td>
 </tr>
 <tr>
-	<td style="text-align:center;">⌥⌫</td>
+	<td style="text-align:center;">⌥\⇧u007⇧f</td>
 	<td style="text-align:left;">delete word before cursor</td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ Any open applications will need to be re-started before the key bindings will ta
 </tr>
 <tr>
 	<td style="text-align:center;">⌥s</td>
-	<td style="text-align:left;">select from beginning of paragrah to last character</td>
+	<td style="text-align:left;">select from beginning of paragraph to last character</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌃⌥⇧s</td>
@@ -182,35 +182,35 @@ Any open applications will need to be re-started before the key bindings will ta
 </tr>
 <tr>
 	<td style="text-align:center;">⌃⇧⌘→</td>
-	<td style="text-align:left;">Delete trailing space</td>
+	<td style="text-align:left;">Delete trailing space ( Control-shift-command-right arrow)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌃⌘⇧↑</td>
-	<td style="text-align:left;">Delete leading and trailing whitespace for paragraph</td>
+	<td style="text-align:left;">Delete leading and trailing whitespace for paragraph ( Control-shift-command-up arrow)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌃⌘⇧↓</td>
-	<td style="text-align:left;">Select paragraph without leading or trailing whitespace</td>
+	<td style="text-align:left;">Select paragraph without leading or trailing whitespace ( Control-shift-command-down arrow)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌃⌥⇧↑</td>
-	<td style="text-align:left;">modify selection up by paragraph (Control Option Shift Up)</td>
+	<td style="text-align:left;">modify selection up by paragraph (Control Option Shift Up) ( Control-option-shift-up arrow)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌃⌥⇧↓</td>
-	<td style="text-align:left;">modify selection down by paragraph (Control Option Shift Down)</td>
+	<td style="text-align:left;">modify selection down by paragraph (Control Option Shift Down) ( Control-option-shift-down arrow)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌃⌥⇧←</td>
-	<td style="text-align:left;">modify selection left by word</td>
+	<td style="text-align:left;">modify selection left by word ( Control-option-shift-left arrow)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌃⌥⇧→</td>
-	<td style="text-align:left;">modify selection right by word</td>
+	<td style="text-align:left;">modify selection right by word ( Control-option-shift-right arrow)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌘⌥⌃←</td>
-	<td style="text-align:left;">Move to first Alphanumeric character of line (new)</td>
+	<td style="text-align:left;">Move to first Alphanumeric character of line (new) ( Control-option-up arrow)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌘⌥←</td>
@@ -218,7 +218,11 @@ Any open applications will need to be re-started before the key bindings will ta
 </tr>
 <tr>
 	<td style="text-align:center;">⌘⌥⇧←</td>
-	<td style="text-align:left;">Select to first character of line with leading space (new)</td>
+	<td style="text-align:left;">Select to first word of paragraph modifying selection (new)</td>
+</tr>
+<tr>
+	<td style="text-align:center;">⌘⌥⇧→</td>
+	<td style="text-align:left;">Select to end of paragraph modifying selection (new)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌥⌘→</td>
@@ -230,11 +234,19 @@ Any open applications will need to be re-started before the key bindings will ta
 </tr>
 <tr>
 	<td style="text-align:center;">⌘↩</td>
-	<td style="text-align:left;">TextMate Command-Return (Command Enter)</td>
+	<td style="text-align:left;">TextMate Command-Return (Command Return)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌘⇧↩</td>
-	<td style="text-align:left;">Insert blank line above paragraph (Command Shift Enter)</td>
+	<td style="text-align:left;">Insert blank line above paragraph (Command Shift Return)</td>
+</tr>
+<tr>
+	<td style="text-align:center;">⇧⌥␣</td>
+	<td style="text-align:left;">Insert space and uppercase next character (Shift-Option-Space) (new)</td>
+</tr>
+<tr>
+	<td style="text-align:center;">⌃⇧␣</td>
+	<td style="text-align:left;">Uppercase next character (Control-Shift-Space) (new)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌘⌥⇧-</td>
@@ -250,7 +262,7 @@ Any open applications will need to be re-started before the key bindings will ta
 </tr>
 <tr>
 	<td style="text-align:center;">⌥⌘↩</td>
-	<td style="text-align:left;">Continue a list item with indentation and include the same delimiter ( Command Option Enter)</td>
+	<td style="text-align:left;">Continue a list item with indentation and include the same delimiter ( Command OptionReturn)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⇧⇥</td>
@@ -263,6 +275,14 @@ Any open applications will need to be re-started before the key bindings will ta
 <tr>
 	<td style="text-align:center;">⌘⌥i</td>
 	<td style="text-align:left;">italicize selection (Markdown)</td>
+</tr>
+<tr>
+	<td style="text-align:center;">⌘⌥`</td>
+	<td style="text-align:left;">backtick selection (Markdown)</td>
+</tr>
+<tr>
+	<td style="text-align:center;">⌃⌘↩</td>
+	<td style="text-align:left;">break line with double space (Markdown) (Control-Command-Return)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌘⌥=</td>
@@ -293,8 +313,8 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">Forward delete to end of paragraph</td>
 </tr>
 <tr>
-	<td style="text-align:center;">⌘⇧\177</td>
-	<td style="text-align:left;">Delete to beginning of paragraph</td>
+	<td style="text-align:center;">⌘⇧⌫</td>
+	<td style="text-align:left;">Delete to beginning of paragraph ( Command-shift-delete)</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌘⌥7</td>
@@ -308,7 +328,6 @@ Any open applications will need to be re-started before the key bindings will ta
 </table>
 
 <table>
-<caption id="emacsstylec-xshortcuts"> EMACS style C-x shortcuts </caption>
 <colgroup>
 <col style="text-align:center;"/>
 <col style="text-align:center;"/>
@@ -369,7 +388,6 @@ Any open applications will need to be re-started before the key bindings will ta
 </table>
 
 <table>
-<caption id="commentingcommands"> Commenting commands </caption>
 <colgroup>
 <col style="text-align:center;"/>
 <col style="text-align:center;"/>
@@ -412,7 +430,6 @@ Any open applications will need to be re-started before the key bindings will ta
 </table>
 
 <table>
-<caption id="multi-strokemarkdowncommands"> Multi-stroke Markdown commands </caption>
 <colgroup>
 <col style="text-align:center;"/>
 <col style="text-align:center;"/>
@@ -442,20 +459,20 @@ Any open applications will need to be re-started before the key bindings will ta
 <tr>
 	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;"></td>
-	<td style="text-align:center;">\</td>
+	<td style="text-align:center;">[</td>
 	<td style="text-align:left;">insert reference link <code>[selection][[cursor]]</code></td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;"></td>
-	<td style="text-align:center;">\</td>
+	<td style="text-align:center;">]</td>
 	<td style="text-align:left;">insert reference <code>[selection]: [cursor]</code></td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌃⌘w</td>
 	<td style="text-align:center;"></td>
 	<td style="text-align:center;">+</td>
-	<td style="text-align:left;">Unordered list item with</td>
+	<td style="text-align:left;">Unordered list item with +</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌃⌘w</td>
@@ -560,6 +577,12 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">same as lc, but with image syntax <code>![selected text](clipboard)</code></td>
 </tr>
 <tr>
+	<td style="text-align:center;">⌃⌘w</td>
+	<td style="text-align:center;">i</td>
+	<td style="text-align:center;">d</td>
+	<td style="text-align:left;">same as lc, but with image syntax and &#8220;+&#8221; for Droplr links <code>![selected text](clipboard+)</code></td>
+</tr>
+<tr>
 	<td style="text-align:center;" colspan="4"></td>
 </tr>
 <tr>
@@ -585,7 +608,6 @@ Any open applications will need to be re-started before the key bindings will ta
 </table>
 
 <table>
-<caption id="htmlcommands"> HTML commands </caption>
 <colgroup>
 <col style="text-align:center;"/>
 <col style="text-align:center;"/>
@@ -666,7 +688,6 @@ Any open applications will need to be re-started before the key bindings will ta
 </table>
 
 <table>
-<caption id="surroundcommands"> Surround commands </caption>
 <colgroup>
 <col style="text-align:center;"/>
 <col style="text-align:center;"/>
@@ -696,13 +717,13 @@ Any open applications will need to be re-started before the key bindings will ta
 <tr>
 	<td style="text-align:center;">⌃⌘s</td>
 	<td style="text-align:center;"></td>
-	<td style="text-align:center;">\</td>
+	<td style="text-align:center;">[</td>
 	<td style="text-align:left;">wrap [] with spaces</td>
 </tr>
 <tr>
 	<td style="text-align:center;">⌃⌘s</td>
 	<td style="text-align:center;"></td>
-	<td style="text-align:center;">\</td>
+	<td style="text-align:center;">]</td>
 	<td style="text-align:left;">wrap [] no spaces</td>
 </tr>
 <tr>

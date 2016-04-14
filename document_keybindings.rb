@@ -2,10 +2,26 @@
 # encoding: utf-8
 
 require 'rubygems'
+require 'shellwords'
 
-infile = File.new('DefaultKeyBinding.dict','r')
-input = infile.read
-infile.close
+def class_exists?(class_name)
+  klass = Module.const_get(class_name)
+  return klass.is_a?(Class)
+rescue NameError
+  return false
+end
+
+if class_exists? 'Encoding'
+  Encoding.default_external = Encoding::UTF_8 if Encoding.respond_to?('default_external')
+  Encoding.default_internal = Encoding::UTF_8 if Encoding.respond_to?('default_internal')
+end
+
+infile = 'DefaultKeyBinding.dict'
+begin
+  input = IO.read(infile).force_encoding('utf-8')
+rescue
+  input = IO.read(infile)
+end
 
 date = Time.now.strftime('%m/%d/%Y')
 
@@ -25,7 +41,7 @@ td:last-child { font-weight:normal;width:auto }
 STYLE
 
 intro =<<INTRO
-##Introduction
+## Introduction
 
 DefaultKeyBindings.dict file (`~/Library/KeyBindings/DefaultKeyBindings.dict`) for Mac OS X, created by [Brett Terpstra][] and based heavily on work done by [Lri][lrikeys].
 Please note that these bindings won't work in all applications: TextWrangler and TextMate, for example, override these with their own settings.
@@ -36,12 +52,13 @@ See Lri's [gists][lrigists] and [website][lriweb] for more coding madness.
 [lrigists]: https://gist.github.com/Lri
 [brett terpstra]: http://brettterpstra.com
 
-##Installation
+## Installation
 
-Copy the DefaultKeyBindings.dict file to the `~/Library/KeyBindings/` directory (create `KeyBindings` if it doesn't already exist).
+Copy the DefaultKeyBinding.dict file to the `~/Library/KeyBindings/` directory (create `KeyBindings` if it doesn't already exist).
+
 Any open applications will need to be re-started before the key bindings will take effect -- or log out and log back in.
 
-<b>Documentation</b> <i>(last updated #{date}.)</i>
+## Documentation <i>(last updated #{date}.)</i>
 
 *Grouped items begin with the groups shortcut (if exists), followed by a subgroup (if exists) followed by the keys specified.*
 
@@ -67,17 +84,18 @@ skip = false
 note = ''
 
 def e_sh(str)
-	#str.to_s.gsub(/(?=[^a-zA-Z0-9_.\/\-\x7F-\xFF\n])/, '\\').gsub(/\n/, "'\n'").sub(/^$/, "''")
-	str.to_s.gsub(/(?=[^a-zA-Z0-9_.\/\-\n])/, '\\').gsub(/\n/, "'\n'").sub(/^$/, "''")
+ #  rx = Regexp.new '(?=[^a-zA-Z0-9_.\/\-\x7F-\xFF\n])', nil, 'n'
+	# str.to_s.gsub(rx, '\\').gsub(/\n/, "'\n'").sub(/^$/, "''")
+  Shellwords.escape(str)
 end
 
 def translate_command(str)
-  str = str.gsub(/~/,'⌥').gsub(/@/,'⌘').gsub(/\$/,'⇧')
-  str = str.gsub(/\^/,'⌃')
+  str = str.gsub(/~/,'⌥').gsub(/@/,'⌘').gsub(/\$/,'⇧').gsub(/\^/,'⌃')
   str = str.gsub('\UF700','↑').gsub('\UF701','↓').gsub('\UF703','→').gsub('\UF702','←')
   str = str.gsub('\U0009','⇥').gsub('\U000D','↩').gsub('\U001B','⎋').gsub('\U000A','␍')
-  str = str.gsub('\UF728','⌦').gsub('\U007F','⌫')
-  str = str.gsub(/([\[\]|])/,"\\\1")
+  str = str.gsub('\UF728','⌦').gsub('\177','⌫')
+  str = str.gsub('\040','␣')
+  str = str.gsub(/([\[\]|])/,'\\\\\1')
   str = str.gsub(/([A-Z])/,'⇧\\1').downcase
   str = str.gsub(/_/,'⇧-')
   str
@@ -96,7 +114,7 @@ input.split("\n").each {|line|
       subgroup_desc = ''
       output += "|||||\n"
     elsif level == 0
-      output += "[ #{group_desc} ]\n\n"
+      # output += "[ #{group_desc} ]\n\n"
       group_command = ''
       group_desc = ''
     end
@@ -134,7 +152,7 @@ topoutput = "|General Commands||\n|Key|Function|\n|:----:|:----|\n"
 toplevel.each {|line|
   topoutput += line
 }
-topoutput += "[ General Commands ]\n\n"
+# topoutput += "[ General Commands ]\n\n"
 
 # output = style + topoutput + output
 output = topoutput + output
