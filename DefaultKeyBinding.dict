@@ -1,6 +1,7 @@
 {
-/* Keybindings for emacs emulation.  Compiled by Jacob Rus.
- *
+/* Keybindings for emacs emulation. Originally by Jacob Rus.
+
+
  * This is a pretty good set, especially considering that many emacs bindings
  * such as C-o, C-a, C-e, C-k, C-y, C-v, C-f, C-b, C-p, C-n, C-t, and
  * perhaps a few more, are already built into the system.
@@ -9,6 +10,9 @@
  * This file uses the Option key as a meta key.  This has the side-effect
  * of overriding Mac OS keybindings for the option key, which generally
  * make common symbols and non-english letters.
+
+ * REFERENCE:
+ * Apple Developer Connection: Text System Defaults and Key Bindings https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html#//apple_ref/doc/uid/20000468-611005
  */
 
  // General
