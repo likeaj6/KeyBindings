@@ -5,7 +5,7 @@ RAW_FILE="https://raw.githubusercontent.com/zer4tul/KeyBindings/master/DefaultKe
 
 mkdir -p "$FILE_PATH"
 
-curl $RAW_FILE -o "$FILE_PATH/DefaultKeyBinding.dict"
+curl -s $RAW_FILE -o "$FILE_PATH/DefaultKeyBinding.dict"
 
 if [[ $(plutil -lint "$FILE_PATH/DefaultKeyBinding.dict") ]]
 then
