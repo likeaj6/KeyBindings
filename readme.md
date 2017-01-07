@@ -777,4 +777,4 @@ This documentation is generated automatically from the comments and commands in 
 
 [kbd]: http://jblevins.org/log/kbd
 [system-bindings]: https://www.hcs.harvard.edu/~jrus/site/system-bindings.html
-[cooca-guide]: https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html
+[cocoa-guide]: https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html
