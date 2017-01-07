@@ -17,7 +17,7 @@ Any open applications will need to be re-started before the key bindings will ta
 
 ## Documentation
 
-> last updated 04/14/2016.
+> last updated 01/08/2017.
 
 *Grouped items begin with the groups shortcut (if exists), followed by a subgroup (if exists) followed by the keys specified.*
 
@@ -75,7 +75,7 @@ Any open applications will need to be re-started before the key bindings will ta
 	<td style="text-align:left;">delete word before cursor</td>
 </tr>
 <tr>
-	<td style="text-align:center;">⌥\⇧u007⇧f</td>
+	<td style="text-align:center;">⌥⌫</td>
 	<td style="text-align:left;">delete word before cursor</td>
 </tr>
 <tr>

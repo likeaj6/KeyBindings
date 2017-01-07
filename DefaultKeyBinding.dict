@@ -138,9 +138,9 @@
   // Insert blank line above paragraph (Command Shift Return)
   "@$\U000D" = (moveToBeginningOfParagraph:, moveLeft:, insertNewline:);
   // Insert space and uppercase next character (Shift-Option-Space) (new)
-  "$~\040" = (insertText:, " ", moveForward:, insertText:, " ", moveWordBackward:, capitalizeWord:, moveForward:, deleteForward:, moveBackward:);
+  "$~\U0020" = (insertText:, " ", moveForward:, insertText:, " ", moveWordBackward:, capitalizeWord:, moveForward:, deleteForward:, moveBackward:);
   // Uppercase next character (Control-Shift-Space) (new)
-  "^$\040" = (insertText:, " ", moveForward:, insertText:, " ", moveWordBackward:, capitalizeWord:, moveForward:, deleteForward:, moveBackward:, deleteBackward:, moveForward:);
+  "^$\U0020" = (insertText:, " ", moveForward:, insertText:, " ", moveWordBackward:, capitalizeWord:, moveForward:, deleteForward:, moveBackward:, deleteBackward:, moveForward:);
 
 
   // > this will kill non alphanumeric symbols and punctuation, use only on *words*
@@ -362,7 +362,7 @@
   "@$\UF728" = (deleteToEndOfParagraph:);
   // > Command-shift-delete
   // Delete to beginning of paragraph
-  "@$\177" = (deleteToBeginningOfParagraph:);
+  "@$\U007F" = (deleteToBeginningOfParagraph:);
   // Right mouse click (useless, doesn't maintain cursor position)
   "@~7" = (setMark:, rightMouseDown:, swapWithMark:);
 
