@@ -41,7 +41,7 @@ td:last-child { font-weight:normal;width:auto }
 STYLE
 
 intro =<<INTRO
-# Better Default Keybindings
+# Better Default Keybindings for macOS
 
 [![Build Status](https://travis-ci.org/zer4tul/KeyBindings.svg?branch=master)](https://travis-ci.org/zer4tul/KeyBindings)
 
