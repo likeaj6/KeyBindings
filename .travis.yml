@@ -2,6 +2,9 @@ language: generic
 sudo: false
 os: osx
 
+before_install:
+  - gem install mdl
+
 script:
     - ./.travis-build.sh
     - mdl -c ./.mdlrc *.md
