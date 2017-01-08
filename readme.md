@@ -1,3 +1,5 @@
+# Better Default Keybindings
+
 ## Introduction
 
 DefaultKeyBindings.dict file (`~/Library/KeyBindings/DefaultKeyBindings.dict`) for Mac OS X, created by [Brett Terpstra][] and based heavily on work done by [Lri][lrikeys] (not accessable any more).
@@ -766,15 +768,15 @@ Any open applications will need to be re-started before the key bindings will ta
 </tbody>
 </table>
 
-
 This documentation is generated automatically from the comments and commands in the DefaultKeyBinding.dict file. The script `document_keybindings.rb` is free for use, but it's specifically designed for use with my formatting in the bindings plist (i.e. it's a little finicky).
 
 ## References
 
-1. [Keyboard Shortcuts for Editing Text Fields in OS X][kbd]
-2. [Default Mac OS X System Key Bindings][system-bindings]
-3. [Cocoa Event Handling Guide][cocoa-guide]
+- [Keyboard Shortcuts for Editing Text Fields in OS X][kbd]
+- [Default Mac OS X System Key Bindings][system-bindings]
+- [Cocoa Event Handling Guide][cocoa-guide]
 
 [kbd]: http://jblevins.org/log/kbd
 [system-bindings]: https://www.hcs.harvard.edu/~jrus/site/system-bindings.html
 [cocoa-guide]: https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html
+
