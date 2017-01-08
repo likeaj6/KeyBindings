@@ -4,3 +4,4 @@ os: osx
 
 script:
     - ./.travis-build.sh
+    - mdl -c ./.mdlrc *.md

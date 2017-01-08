@@ -1,5 +1,7 @@
 # Better Default Keybindings
 
+[![Build Status](https://travis-ci.org/zer4tul/KeyBindings.svg?branch=master)](https://travis-ci.org/zer4tul/KeyBindings)
+
 ## Introduction
 
 DefaultKeyBindings.dict file (`~/Library/KeyBindings/DefaultKeyBindings.dict`) for Mac OS X, created by [Brett Terpstra][] and based heavily on work done by [Lri][lrikeys] (not accessable any more).
